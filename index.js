@@ -16,6 +16,14 @@ api.get('/test', (req, res) => {
 
 api.post('/ocr', (req, res) => {
   var options = req.body
+
+  if(!req.body.data || !req.body.lang) {
+    res.status(500).send({
+      error: "Data missing",
+      message: "Please provide image data and langauge data"
+    })
+  }
+  
   tesseract_wrapper
     .execTesseract(options)
     .then(result => {
