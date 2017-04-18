@@ -1,0 +1,38 @@
+{
+  "name": "tesseract-wrapper-api",
+  "version": "1.0.0",
+  "description": "RESTful API endpoints for the tesseract-wrapper",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha tests/tests.spec.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/midyan/tesseract-wrapper-api.git"
+  },
+  "keywords": [
+    "api",
+    "restful",
+    "tesseract",
+    "endpoint",
+    "image",
+    "ocr",
+    "http"
+  ],
+  "author": "Yan Nunes",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/midyan/tesseract-wrapper-api/issues"
+  },
+  "homepage": "https://github.com/midyan/tesseract-wrapper-api#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0"
+  },
+  "dependencies": {
+    "express": "^4.15.2"
+  }
+}
